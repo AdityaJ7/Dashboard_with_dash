@@ -190,11 +190,17 @@ page_6_layout = html.Div([
 
                  html.Div(
                      className='four columns div-user-controls', children=[
-                         html.H2('Survival Analysis with Python'),
+                         html.H1('Nelson Aalen'),
+                         html.Hr(),
                          html.P(
-                             '''Implementing different functions of Survival Analysis using the lifelines and plotly modules.'''),
-                         html.P(
-                             '''''')
+                             '''This section contains the nelson aalen implementations which are made using lifelines and plotly modules.'''),
+                         html.Hr(),
+                         html.H4(
+                             "The Nelson-Aalen approach can quickly give you a curve of cumulative hazard and estimate the hazard functions based on irregular time intervals."),
+                         html.H4(
+                             "Nelson-Aalen analysis is used to analyze how a given population evolves with time."),
+                         html.H4(
+                             "Here the time is the tenure(in months) for which the customer stayed in the company and the event is whether they churned or not.")
                      ]),
                  html.Div(
                      className='eight columns div-for-charts bg-grey', children=[html.H2('Nelson Aalen plots on the teleco dataset'), dcc.Graph(id='naeplot',
@@ -216,12 +222,19 @@ page_5_layout = html.Div([
 
                  html.Div(
                      className='four columns div-user-controls', children=[
-                         html.H2('Survival Analysis with Python'),
+                         html.H1('Kaplan Meier'),
+                         html.Hr(),
                          html.P(
-                             '''Implementing different functions of Survival Analysis using the lifelines and plotly modules.'''),
-                         html.P(
-                             '''''')
+                             '''This section contains the kaplan meier implementations which are made using lifelines and plotly modules.'''),
+                         html.Hr(),
+                         html.H4(
+                             "Kaplan-Meier estimate is one of the best options to be used to measure the fraction of subjects living for a certain amount of time after treatment."),
+                         html.H4(
+                             " In clinical trials or community trials, the effect of an intervention is assessed by measuring the number of subjects survived or saved after that intervention over a period of time."),
+                         html.H4(
+                             "Here the time is the tenure(in months) for which the customer stayed in the company and the event is whether they churned or not.")
                      ]),
+
                  html.Div(
                      className='eight columns div-for-charts bg-grey', children=[html.H2('Kaplan Meier Survival Function and Cumalative density plots on the teleco dataset'), dcc.Graph(id='kmfplot',
                                                                                                                                                                                          config={
@@ -242,12 +255,17 @@ page_4_layout = html.Div([
 
                  html.Div(
                      className='four columns div-user-controls', children=[
-                         html.H2('Survival Analysis with Python'),
+                         html.H1('Custom Models'),
+                         html.Hr(),
                          html.P(
-                             '''Implementing different functions of Survival Analysis using the lifelines and plotly modules.'''),
-                         html.P(
-                             '''''')
+                             '''This section contains the custom models which are made using lifelines and plotly modules.'''),
+                         html.Hr(),
+                         html.H4(
+                             "The custom models are used to obtain survival functions and cumulative hazards by using univariate filter in the adjacent visualization"),
+                         html.H4(
+                             "Two and three paramater custom models have been visualized here."),
                      ]),
+
                  html.Div(
                      className='eight columns div-for-charts bg-grey', children=[html.H2('Custom model implementation on the teleco dataset - 3 Parameters'), dcc.Graph(id='custom',
                                                                                                                                                                         config={
@@ -273,12 +291,17 @@ page_3_layout = html.Div([
 
                  html.Div(
                      className='four columns div-user-controls', children=[
-                         html.H2('Survival Analysis with Python'),
+                         html.H1('Cox Proportional Model'),
+                         html.Hr(),
                          html.P(
-                             '''Implementing different functions of Survival Analysis using the lifelines and plotly modules.'''),
-                         html.P(
-                             '''''')
+                             '''This section contains the cox proportional model which is made using lifelines and plotly modules.'''),
+                         html.Hr(),
+                         html.H4(
+                             "In his seminal paper, Cox (1972) presented the proportional hazards model."),
+                         html.H4(
+                             "It specifies that the conditional hazard function of failure time given a set of covariates is the product of an unknown baseline hazard function and an exponential regression function of covariates"),
                      ]),
+
                  html.Div(
                      className='eight columns div-for-charts bg-grey', children=[html.H2('Cox Proportional Hazard Model on the teleco dataset'), dcc.Graph(id='coxproportional',
                                                                                                                                                            config={
@@ -298,13 +321,17 @@ page_2_layout = html.Div([
              children=[
                  html.Div(
                      className='four columns div-user-controls', children=[
-                         html.H2('Survival Analysis with Python'),
+                         html.H1('Cumulative Hazard Models'),
+                         html.Hr(),
                          html.P(
-                             '''Implementing different functions of Survival Analysis using the lifelines and plotly modules.'''),
-                         html.P(
-                             ''''''),
-
+                             '''This section contains the cumulative hazard models which are made using lifelines and plotly modules.'''),
+                         html.Hr(),
+                         html.H4(
+                             "The time to event of the teleco dataset has been modelled using the four different parametric models."),
+                         html.H4(
+                             "Here the time is the tenure(in months) for which the customer stayed in the company and the event is whether they churned or not.")
                      ]),
+
                  html.Div(
                      className='eight columns div-for-charts bg-grey', children=[html.H2('Parametric Model Implementation of cumulative hazard function on the Telco dataset'), dcc.Graph(id='hazardfunction',
                                                                                                                                                                                           config={
@@ -332,13 +359,13 @@ page_1_layout = html.Div([
              children=[
                  html.Div(
                      className='four columns div-user-controls', children=[
-                         html.H1('Survival Functions with Python'),
+                         html.H1('Survival Functions '),
                          html.Hr(),
                          html.P(
                              '''This section contains the survival functions which are made using lifelines and plotly modules.'''),
                          html.Hr(),
                          html.H4(
-                             "The survival function using the parametric models is shown in the above visualization"),
+                             "The survival function using the parametric models is shown in the adjacent visualization"),
                          html.H4(
                              "The time to event of the teleco dataset has been modelled using the four different parametric models."),
                          html.H4(
