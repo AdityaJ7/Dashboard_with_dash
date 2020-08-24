@@ -190,7 +190,7 @@ page_6_layout = html.Div([
 
                  html.Div(
                      className='four columns div-user-controls', children=[
-                         html.H1('Nelson Aalen'),
+                         html.H1('Nelson Aalen Estimator'),
                          html.Hr(),
                          html.P(
                              '''This section contains the nelson aalen implementations which are made using lifelines and plotly modules.'''),
@@ -222,7 +222,7 @@ page_5_layout = html.Div([
 
                  html.Div(
                      className='four columns div-user-controls', children=[
-                         html.H1('Kaplan Meier'),
+                         html.H1('Kaplan Meier Curves'),
                          html.Hr(),
                          html.P(
                              '''This section contains the kaplan meier implementations which are made using lifelines and plotly modules.'''),
